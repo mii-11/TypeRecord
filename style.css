@@ -1,0 +1,216 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 90px;
+    background-color: #4D80E4;
+}
+#header h1{
+    font-family: sans-serif;
+    padding: 8px 10px 0 10px;
+
+}
+#header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#header ul{
+	list-style-type:none;
+	display:flex;
+    padding-left: 10px;
+}
+
+#header ul li a{
+	text-decoration:none;
+	display:block;
+	width:198px;
+	background-color:#4D80E4;
+	text-align:center;
+	color:#ffffff;
+	font-size:14pt;
+}
+#header ul li a:hover{
+	background-color:#46B3E6;
+	font-weight:bold;
+	color:#fff;
+}
+
+
+#fix_header ul{
+	list-style-type:none;
+	display:flex;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+#fix_header a{
+	text-decoration:none;
+	display:block;
+	width:150px;
+	background-color:#4D80E4;
+	border:5px solid #ffffff;
+	text-align:center;
+	color:#fff;
+	font-size:12pt;
+    border-radius: 20px;
+}
+
+#fix_header a:hover{
+	background-color:#46B3E6;
+	font-weight:bold;
+    border-radius: 20px;
+	color:#fff;
+}
+
+#sky{
+    background-image: url("images/height_300aozora.jpg");
+    height: 300px;
+    margin-bottom: 15px;
+}
+.AllWrapper{
+    height: 100%;
+    position: relative;
+}
+
+.Wrapper{
+    min-height: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    margin:0 auto;
+	margin-bottom:20px;
+}
+#graph_main{
+    width: 1000px;
+    min-height: 458px;
+    margin:0 auto;
+
+}
+#Tmain{
+    /* width: 1000px; */
+    min-height: 763px;
+    margin:0 auto;
+    padding-left: 310px;
+    /* margin-top: 20px; */
+	margin-bottom:20px;/*メインとフッターの間をあける*/
+
+}
+#Ttop_main{
+    min-height: 263px;
+    margin-left:80px;
+    padding-left: 210px;
+	margin-bottom:20px;/*メインとフッターの間をあける*/
+}
+h1{
+    color:#2E279D;
+}
+p{
+    font-size:20px;
+}
+
+footer{
+    position: absolute;
+    /*bottom: -45px;*/
+    left: 0;
+    width: 100%;
+    height: 31px;
+    background-color: #4D80E4;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    font-size: 10px;
+    clear: both;
+    z-index: 1;
+}
+footer p{
+    font-size: 5px;
+}
+.form1,input,select,label{
+    margin: 3px 3px;
+    font-size: 20px;
+}
+
+#info{
+    margin-top: 30px;
+}
+input .rg{
+    text-align: right;
+}
+table{
+    border-collapse: collapse;
+}
+td:nth-of-type(odd){
+    text-align: center;
+    width:120px;
+}
+td:nth-of-type(even){
+    width:150px;
+}
+
+td{
+    border: solid 1px #666;
+}
+th{
+    border: solid 1px #666;
+}
+#count{
+    text-align: right;
+    padding-right: 15px;
+}
+section{
+    margin-top: 100px;
+}
+#result{
+    margin-left:  30px;
+    margin-bottom: 100px;
+}
+#result td{
+    width:200px;
+    height: 50px;
+    text-align: center;
+}
+/* input{
+    cursor: pointer;
+} */
+label{
+    cursor: pointer;
+}
+
+.topButton{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #2E279D;
+    background: rgb(228, 231, 30);
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 20%;
+    font-weight: 800;
+    z-index: 2;
+    /*デフォルトで非表示にする*/
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+  }
+  
+  /*このクラスが付与されると表示する*/
+  .active{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+  }
+
+  #graph_h1{
+      text-align: center;
+  }
+  #go{
+      color: orangered;
+  }
